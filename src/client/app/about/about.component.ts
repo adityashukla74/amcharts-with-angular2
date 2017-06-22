@@ -30,15 +30,25 @@ export class AboutComponent {
 
   ngOnInit() {
     this.chart = this.AmCharts.makeChart("chartdiv", {
-      "type": "serial",
-      "theme": "light",
-      "marginTop": 0,
-      "marginRight": 80,
-      "dataProvider": this.makeRandomDataProvider(),
-      "valueAxes": [{
-        "axisAlpha": 0,
-        "position": "left"
-      }],
+      "type": "pie",
+            "theme": "light",
+            "dataProvider": [ {
+              "title": "New",
+              "value": 4852
+            }, {
+              "title": "Returning",
+              "value": 9899
+            } ],
+            "titleField": "title",
+            "valueField": "value",
+            "labelRadius": 5,
+          
+            "radius": "42%",
+            "innerRadius": "60%",
+            "labelText": "[[title]]",
+            "export": {
+              "enabled": true
+            },
       "graphs": [{
         "id": "g1",
         "balloonText": "[[category]]<br><b><span style='font-size:14px;'>[[value]]</span></b>",
