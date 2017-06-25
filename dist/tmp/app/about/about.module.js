@@ -9,6 +9,7 @@ var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var about_component_1 = require("./about.component");
 var about_routing_module_1 = require("./about-routing.module");
+var amcharts3_angular_1 = require("@amcharts/amcharts3-angular");
 var AboutModule = (function () {
     function AboutModule() {
     }
@@ -16,7 +17,7 @@ var AboutModule = (function () {
 }());
 AboutModule = __decorate([
     core_1.NgModule({
-        imports: [common_1.CommonModule, about_routing_module_1.AboutRoutingModule],
+        imports: [common_1.CommonModule, about_routing_module_1.AboutRoutingModule, amcharts3_angular_1.AmChartsModule],
         declarations: [about_component_1.AboutComponent],
         exports: [about_component_1.AboutComponent]
     })
