@@ -1,5 +1,5 @@
 :host {
-  background-color: #106cc8;
+  background-color: #ffffff;
   color: rgba(255, 255, 255, 0.87);
   display: block;
   height: 48px;
@@ -12,12 +12,30 @@ h1 {
   font-weight: normal;
   letter-spacing: 0.1px;
   line-height: 48px;
+  color: #106cc8;
 }
 
 .more {
   background: url("./assets/svg/more.svg");
-  float: right;
+  float: none;
   height: 24px;
+  margin: 0 auto;
+  text-align: center;
   margin-top: 12px;
   width: 24px;
+}
+
+.search-wrapper {
+  display: inline;
+  text-align: center;
+  margin-right: auto;
+  padding: 5px;
+  color: #000000;
+}
+
+form.navbar-search {
+  display: inline;
+    float: none;
+    padding: 5px;
+    color: #106cc8;
 }

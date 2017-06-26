@@ -10,3 +10,35 @@ h2 {
   margin-bottom: 0;
   margin-top: 0.83em;
 }
+
+.row {
+      background-color:#D2F0FF;
+     }
+#chartdata {
+  width: 900px;
+  max-width: 100%;
+  border: 2px solid #D2F0FF;
+  height: 100px;
+  position: bottom;
+}
+#chartdata table {
+  width: 100%;
+}
+
+#chartdata table th, #chartdata table td {
+  text-align: center;
+  padding: 5px 7px;
+}
+
+#chartdata table th {
+  background: #999;
+  color: #fff;
+}
+
+#chartdata table td {
+  border-bottom: 1px solid #eee;
+}
+
+#chartdata table td.row-title {
+  font-weight: bold;
+}

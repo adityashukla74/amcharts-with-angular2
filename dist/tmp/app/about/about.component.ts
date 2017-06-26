@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AmChartsService } from '@amcharts/amcharts3-angular';
 
 @Component({
@@ -7,7 +7,7 @@ import { AmChartsService } from '@amcharts/amcharts3-angular';
  templateUrl: 'about.component.html',
  styleUrls: ['about.component.css']
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit{
  private timer: any;
  private chart: any;
  constructor(private AmCharts: AmChartsService) { }
