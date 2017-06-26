@@ -1,11 +1,11 @@
 {
   "static": {
     "urls": {
-      "/index.html": "6e9c70d5bc2ac4e333e6b71e7c3930f8aaaf5ae5",
+      "/index.html": "f8da7ac321c2759beed1d9ea651fa8944dce729a",
       "/worker-basic.min.js": "2f12848c352bd6baf25f0f1d995351696ef518ff",
-      "/assets/data.json": "4442de734b100da8d244b35d34a355dee4dd9618",
       "/css/main.css": "3b1545bc108085e6b994950639a0077f4634bf9b",
-      "/js/app.js": "b71a6262e1e3f7616ac7068860fec5bcf6a70dec",
+      "/assets/data.json": "4442de734b100da8d244b35d34a355dee4dd9618",
+      "/js/app.js": "e7f6ae3af01321e57be42d83288d842e3d3b85f9",
       "/js/shims.js": "9c85dabb6a38af6893839ad547f3d58281332471",
       "/assets/favicon/favicon-DEV.ico": "aa4fb0706ed367fb5c2fd6bd2b058c0dce8cc785",
       "/assets/favicon/favicon-PROD.ico": "5d40a29d26398292f08a46b26f6788ec60f5f43e",
