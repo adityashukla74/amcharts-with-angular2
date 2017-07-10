@@ -63,6 +63,7 @@ export class SeedConfig {
     { src: 'intl/dist/Intl.min.js', inject: 'shims' },
     { src: 'systemjs/dist/system.src.js', inject: 'shims', buildType: BUILD_TYPES.DEVELOPMENT },
     { src: '.tmp/Rx.min.js', inject: 'libs', buildType: BUILD_TYPES.DEVELOPMENT },
+    { src: '@angular/material/prebuilt-themes/indigo-pink.css', inject: true }
   ];
   APP_ASSETS: InjectableDependency[] = [];
   TEMP_FILES: string[] = [
@@ -105,6 +106,8 @@ export class SeedConfig {
     },
     map: {
       '@amcharts/amcharts3-angular': 'node_modules/@amcharts/amcharts3-angular/umd/index.js',
+      '@angular/material': 'node_modules/@angular/material/bundles/material.umd.js',
+      '@angular/cdk': 'node_modules/@angular/cdk/bundles/cdk.umd.js'
     },
     packages: {
       [this.BOOTSTRAP_DIR]: {
@@ -119,13 +122,14 @@ export class SeedConfig {
     base: this.PROJECT_ROOT,
     packageConfigPaths: [
       join('node_modules', '*', 'package.json'),
+      join('node_modules', '@amcharts', '*', 'package.json'),
       join('node_modules', '@angular', '*', 'package.json')
     ],
     paths: {
       [join(this.TMP_DIR, this.BOOTSTRAP_DIR, '*')]: `${this.TMP_DIR}/${this.BOOTSTRAP_DIR}/*`,
       '@angular/platform-browser/animations': 'node_modules/@angular/platform-browser/bundles/platform-browser-animations.umd.js',
       '@angular/animations/browser': 'node_modules/@angular/animations/bundles/animations-browser.umd.js',
-      '@amcharts/amcharts3-angular': 'node_modules/@amcharts/amcharts3-angular/umd/index.js',
+      '@amcharts/amcharts3-angular': 'node_modules/@amcharts/amcharts3-angular/es2015/index.js',
       'dist/tmp/node_modules/*': 'dist/tmp/node_modules/*',
       'node_modules/*': 'node_modules/*',
       '*': 'node_modules/*'

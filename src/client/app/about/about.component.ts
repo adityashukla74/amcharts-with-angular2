@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AmChartsService } from '@amcharts/amcharts3-angular';
-declare let chart:any
+import { MdToolbarModule } from '@angular/material';
+declare let chart: any;
 @Component({
  moduleId: module.id,
  selector: 'sd-about',
@@ -9,6 +10,7 @@ declare let chart:any
 })
 export class AboutComponent implements OnInit {
     private timer: any;
+    private chart: any;
     private chart1: any;
     private chart2: any;
     private chart3: any;
@@ -20,14 +22,14 @@ export class AboutComponent implements OnInit {
             year: '' + year,
             value: Math.floor(Math.random() * 100) - 50
             });
-        }  
+        }
         return dataProvider;
     }
     ngOnInit() {
         this.chart = this.AmCharts.makeChart(
             'chart1div', {
                 'type': 'pie',
-                "dataTableId": "chartdata",
+                'dataTableId': 'chartdata',
                 'theme': 'light',
                 'dataProvider': [
                     {
@@ -91,7 +93,7 @@ export class AboutComponent implements OnInit {
         this.chart = this.AmCharts.makeChart(
             'chart4div', {
                 'type': 'pie',
-                "dataTableId": "chartdata",
+                'dataTableId': 'chartdata',
                 'theme': 'light',
                 'dataProvider': [
                     {
@@ -154,6 +156,3 @@ export class AboutComponent implements OnInit {
         );
     }
 }
-}
-
-
